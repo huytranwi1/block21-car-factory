@@ -6,11 +6,11 @@ class Car {
     }
 
     getDescription() {
-        return `This car ${this.make} make, is this ${this.model} model, and this ${this.year} year.`
+        return `This car ${this.make} make, is ${this.model} model, and ${this.year} year.`
     }
 }
 
-class Tesla extends Car{
+class ElectricCar extends Car{
     constructor(make, model, year, range) {
         super(make, model, year);
         this.range = range;
@@ -22,3 +22,7 @@ class Tesla extends Car{
    
 }
 
+
+const electricCar1 = new ElectricCar("Tesla", "Model S", 2019, 300);
+
+electricCar1.getDescription();
